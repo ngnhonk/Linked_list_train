@@ -62,6 +62,37 @@ void addLast(node &a, int x)
     }
 }
 
+//Them phan tu vao vi tri k
+void addPos(node &a, int pos, int x)
+{
+    node p = a;
+    node tmp = createNode(x);
+    int n = Size(a);
+    if((pos <= 0) || (pos > n + 1))
+    {
+        cout << "Vi tri khong hop le!";
+        return;
+    }
+    if(pos == 1)
+    {
+        addFirst(a, x);
+        return;
+    }
+    else if(pos == n + 1)
+    {
+        addLast(a, x);
+        return;
+    }
+    else
+    {
+        for (int i = 1; i < pos-1; i++)
+        {
+            p = p->next;
+        }
+        tmp -> next = p -> next;
+        p -> next = tmp;
+    }
+}
 //In ra danh sach
 void printList(node &a)
 {
@@ -79,5 +110,9 @@ void deleteAll(node &a)
     if(a != NULL)
     {
         a = NULL;
+    }
+    if(a == NULL)
+    {
+        cout << "Danh sach lien ket rong! ";
     }
 }

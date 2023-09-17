@@ -13,9 +13,15 @@ int main()
     {
         ++i;
         cin >> x;
-        addLast(head, x);
+        addFirst(head, x);
     }
-
+    int pos;
+    cout << "Nhap vi tri: ";
+    cin >> pos;
+    cout << "Nhap gia tri: ";
+    cin >> x;
+    addPos(head, pos, x);
     cout << "Cac phan tu cua danh sach lien ket: ";
+
     printList(head);
 }

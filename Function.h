@@ -22,6 +22,9 @@ void addFirst(node &a, int x);
 //Them phan tu vao cuoi danh sach
 void addLast(node &a, int x);
 
+//Them phan tu vao vi tri k
+void addPos(node &a, int pos, int x);
+
 //In ra danh sach
 void printList(node &a);
 
