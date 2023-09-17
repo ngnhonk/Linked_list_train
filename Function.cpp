@@ -72,3 +72,12 @@ void printList(node &a)
         p = p -> next;
     }
 }
+
+//Ham xoa all
+void deleteAll(node &a)
+{
+    if(a != NULL)
+    {
+        a = NULL;
+    }
+}

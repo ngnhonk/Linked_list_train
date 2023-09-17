@@ -24,3 +24,6 @@ void addLast(node &a, int x);
 
 //In ra danh sach
 void printList(node &a);
+
+//Ham xoa all
+void deleteAll(node &a);
